@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePicture from './profilePicture.js';
 import './navbar.css'
 class Navbar extends React.Component{
     render(){
@@ -12,6 +13,11 @@ class Navbar extends React.Component{
                         <div className='oval'>
                             <div className='triangle'></div>
                         </div>
+                    </div>
+
+
+                    <div className='navbar-down'>
+                        <ProfilePicture avatarURL='cos'></ProfilePicture>
                     </div>
 
                 </div>
