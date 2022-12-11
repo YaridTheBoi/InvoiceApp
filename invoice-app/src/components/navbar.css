@@ -2,9 +2,9 @@
     width: 100px;
     background-color: rgb(55,59,83);
     height: 100%;
-    position: fixed;
+    /* position: fixed;
     top:0px;
-    left:0px;
+    left:0px; */
     overflow-x: hidden;
     z-index: 1;
     display: flex;
@@ -53,9 +53,9 @@
         width: 100%;
         background-color: rgb(55,59,83);
         height: 80px;
-        position: fixed;
+        /* position: fixed;
         top:0px;
-        left:0px;
+        left:0px; */
         overflow-x: hidden;
         z-index: 1;
         display: flex;

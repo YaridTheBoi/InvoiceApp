@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+.main-panel{
+    /* background-color: blueviolet; */
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.my-invoices{
+    /* background-color: aqua; */
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    text-align: left;
+    font-weight: bold;
+    color: rgb(12, 14, 22);
+}
+
+.stats{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    font-weight: medium;
+    color: rgb(136, 142, 176);
+}
+.functionalities{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
