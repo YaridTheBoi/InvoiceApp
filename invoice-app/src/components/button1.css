@@ -5,4 +5,29 @@
     width: fit-content;
     background-color: rgb(124, 93, 250);
     border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s;
 }
+.my-button:hover{
+    background-color: rgb(146,119, 255);
+}
+
+.button-text{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+}
+
+.my-icon{
+    height: 30px;
+    width: 30px;
+    color: rgb(255, 255, 255);
+    margin:5px;
+}
+

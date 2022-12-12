@@ -8,23 +8,10 @@ function App() {
 
     <div className="App">
       <Navbar></Navbar>
-
-
       <div className='app-zone'>
 
-
-
         <MainPanel></MainPanel>
-
-
-        
       </div>
-
-
-
-      
-      
-      
     </div>
     
   );

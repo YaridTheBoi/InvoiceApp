@@ -2,8 +2,9 @@
 
 .main-panel{
     /* background-color: blueviolet; */
-    width: 80%;
+    width: 90%;
     height: fit-content;
+    min-width: 300px;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -35,7 +36,9 @@
 }
 .functionalities{
     height: auto;
-    width: auto;
+    width: 30%;
+    /* min-width: 220px; */
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }

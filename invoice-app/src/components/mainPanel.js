@@ -1,6 +1,7 @@
 import React from 'react'
 import './mainPanel.css'
 import Button1 from './button1'
+import DropDownFilter from './dropdownfiler'
 const MainPanel= () =>{
     return(
 
@@ -11,7 +12,8 @@ const MainPanel= () =>{
             </div>
 
             <div className='functionalities'>
-                <Button1 buttonText="Add invoice"></Button1>
+                <DropDownFilter></DropDownFilter>
+                <Button1 buttonText="New invoice"></Button1>
             </div>
         </div>
     );
