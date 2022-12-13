@@ -6,8 +6,8 @@ const DropDownFilter = () =>{
 
     const [currentFiler, setCurrentFilet] = useState("Filter by status");
     const [filterArray, setFilterArray] = useState(["Draft", "Pending", "Paid"]);
-    const filters= filterArray.map((filter) => <div className="dropdown-item">
-                                                {filter}
+    const filters= filterArray.map((filter) => <div className="dropdown-item" onClick={ () => console.log({filter})}>
+                                                <span className="checkmark" ></span>{filter}
                                                 
                                             </div>)
     return(
@@ -15,7 +15,7 @@ const DropDownFilter = () =>{
         <div className="dropdown">
             <div className="dropdown-filter">
                 {currentFiler}
-                <FontAwesomeIcon icon={faAngleDown} className='my-icon'></FontAwesomeIcon>
+                <FontAwesomeIcon icon={faAngleDown} className='my-icon-dropdown'></FontAwesomeIcon>
             </div>
 
             <div className="dropdown-content">
