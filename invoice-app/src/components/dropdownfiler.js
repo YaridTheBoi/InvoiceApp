@@ -7,7 +7,7 @@ const DropDownFilter = () =>{
     const [currentFiler, setCurrentFilet] = useState("Filter by status");
     const [filterArray, setFilterArray] = useState(["Draft", "Pending", "Paid"]);
     const filters= filterArray.map((filter) => <div className="dropdown-item" onClick={ () => console.log({filter})}>
-                                                <span className="checkmark" ></span>{filter}
+                                                <input type="checkbox" onClick={ () => console.log("Hit")}></input><span className="checkmark" ></span>{filter}
                                                 
                                             </div>)
     return(

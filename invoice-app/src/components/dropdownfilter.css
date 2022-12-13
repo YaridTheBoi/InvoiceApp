@@ -67,8 +67,7 @@ input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 0;
-    width: 0;
+
 }
 .checkmark{
     height: 16px;
@@ -77,3 +76,7 @@ input[type="checkbox"] {
     border-radius: 1px;
     background-color: rgb(223,227,250) ;
 }
+
+.container input:checked .checkmark {
+    background-color: rgb(124,93,250);
+    }
