@@ -16,15 +16,12 @@
 .dropdown-filter{
     height: 100%;
     width: fit-content;
-    /* font-family: 'League Spartan', sans-serif;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold; */
     color: rgb(12,14,22);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .dropdown-content{
@@ -60,13 +57,18 @@
     width: 15px;
     height: 15px;
     color: rgb(124,93,250);
+    margin: 5px;
     
 }
 
 input[type="checkbox"] {
-    position: absolute;
+    position: absolute; 
     opacity: 0;
     cursor: pointer;
+    width: 100%;
+    height: same;
+    right: 0px;
+    /* height: 30px; */ 
 
 }
 .checkmark{
@@ -75,8 +77,21 @@ input[type="checkbox"] {
     margin: 5px;
     border-radius: 1px;
     background-color: rgb(223,227,250) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container input:checked .checkmark {
+.my-check-dropdown{
+    color: rgb(223,227,250) ;
+}
+/*ZAPYTAC SZYMANKA O TE TYLDE*/
+input:checked ~ .checkmark {
     background-color: rgb(124,93,250);
-    }
+}
+
+/*ZAPYTAC SZYMANKA O TE TYLDE*/
+input:checked ~ .my-check-dropdown {
+    
+    color: rgb(255,255,255);
+}
