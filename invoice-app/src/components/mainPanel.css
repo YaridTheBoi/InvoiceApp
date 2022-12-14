@@ -2,7 +2,7 @@
 
 .main-panel{
     /* background-color: blueviolet; */
-    width: 90%;
+    width: 50%;
     height: fit-content;
     min-width: 300px;
     display: flex;
@@ -22,7 +22,7 @@
 .title{
     font-family: 'League Spartan', sans-serif;
     font-size: 32px;
-    text-align: left;
+    text-align: left; 
     font-weight: bold;
     color: rgb(12, 14, 22);
 }
@@ -36,9 +36,32 @@
 }
 .functionalities{
     height: auto;
-    width: 30%;
+    width: 50%;
     /* min-width: 220px; */
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right; 
+    gap:20px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .functionalities{
+        height: auto;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right; 
+        gap:5px;
+    }
+
+    .main-panel{
+        /* background-color: blueviolet; */
+        width: 90%;
+        height: fit-content;
+        min-width: 300px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
 }

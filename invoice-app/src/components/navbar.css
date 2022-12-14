@@ -10,13 +10,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-radius: 0px 0px 20px 0px;
+    border-radius: 0px 20px 20px 0px;
 }
 
 .my-icon{
     height: 30px;
     width: 30px;
-    color: rgb(126, 136,195)
+    color: rgb(126, 136,195);
+    transform:rotate(-22.5deg);
 }
 
 .profile-picture{
@@ -48,19 +49,17 @@
     margin-bottom: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .navbar{
         width: 100%;
         background-color: rgb(55,59,83);
         height: 80px;
-        /* position: fixed;
-        top:0px;
-        left:0px; */
         overflow-x: hidden;
         z-index: 1;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        border-radius: 0px 0px 0px 0px;
     }
 
     .navbar-down{

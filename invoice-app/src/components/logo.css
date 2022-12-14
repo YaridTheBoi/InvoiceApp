@@ -41,7 +41,7 @@
     background-color: rgb(146,119,255);
     width: 100%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .logo{
         position: relative;
         display: flex;
