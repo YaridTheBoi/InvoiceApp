@@ -7,7 +7,7 @@ import { faCirclePlus} from '@fortawesome/free-solid-svg-icons'
 const Button1= (props) =>{
 
     return(
-        <div className='my-button'>
+        <div className='my-button' onClick={props.onClick}>
             <FontAwesomeIcon icon={faCirclePlus} className='my-icon-button'></FontAwesomeIcon>
             <div className='button-text'>{props.buttonText}</div>
         </div>

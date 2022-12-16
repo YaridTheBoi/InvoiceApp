@@ -1,8 +1,15 @@
 import './App.css';
-import React  from 'react';
+import React, { useState }  from 'react';
 import Navbar from './components/navbar.js'
 import MainPanel from './components/mainPanel.js'
-function App() {
+const App = () =>  {
+  const [showSidePanel, setShowSidePanel]= useState(false);
+
+  const switchShowSidePanel = () =>{
+    setShowSidePanel(!showSidePanel)
+    console.log(showSidePanel);
+  }
+  
   return (
 
 
@@ -10,7 +17,7 @@ function App() {
       <Navbar></Navbar>
       <div className='app-zone'>
 
-        <MainPanel></MainPanel>
+        <MainPanel switchState={switchShowSidePanel}></MainPanel>
       </div>
     </div>
     
