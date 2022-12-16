@@ -1,4 +1,4 @@
-import React , { useState } from 'react'
+import React from 'react'
 import './button1.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCirclePlus} from '@fortawesome/free-solid-svg-icons'
@@ -7,7 +7,7 @@ import { faCirclePlus} from '@fortawesome/free-solid-svg-icons'
 const Button1= (props) =>{
 
     return(
-        <div className='my-button' onClick={props.onClick}>
+        <div className='my-button' onClick={props.switchShowSidePanel}>
             <FontAwesomeIcon icon={faCirclePlus} className='my-icon-button'></FontAwesomeIcon>
             <div className='button-text'>{props.buttonText}</div>
         </div>

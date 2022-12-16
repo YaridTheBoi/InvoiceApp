@@ -13,8 +13,8 @@ const MainPanel= (props) =>{
             </div>
 
             <div className='functionalities'>
-                <DropDownFilter></DropDownFilter>
-                <Button1 buttonText="New invoice" onClick={props.switchState}></Button1>
+                <DropDownFilter handleCheck ={props.handleCheckFilter} filterArray={props.filterArray}></DropDownFilter>
+                <Button1 buttonText="New invoice" switchShowSidePanel={props.switchShowSidePanel}></Button1>
             </div>
         </div>
     );
