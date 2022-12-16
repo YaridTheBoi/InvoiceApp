@@ -14,7 +14,7 @@ const MainPanel= (props) =>{
 
             <div className='functionalities'>
                 <DropDownFilter handleCheck ={props.handleCheckFilter} filterArray={props.filterArray}></DropDownFilter>
-                <Button1 buttonText="New invoice" switchShowSidePanel={props.switchShowSidePanel}></Button1>
+                <Button1 buttonText="New invoice" newInvoiceClick={props.newInvoiceClick}></Button1>
             </div>
         </div>
     );
