@@ -13,7 +13,7 @@ const MainPanel= () =>{
 
             <div className='functionalities'>
                 <DropDownFilter></DropDownFilter>
-                <Button1 buttonText="New invoice"></Button1>
+                <Button1 buttonText="New invoice" ></Button1>
             </div>
         </div>
     );

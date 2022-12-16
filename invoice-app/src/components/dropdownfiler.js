@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './dropdownfilter.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown, faCheck} from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown,faAngleUp, faCheck} from '@fortawesome/free-solid-svg-icons'
 const DropDownFilter = () =>{
 
     // const dropContent = document.getElementById(dropContent);
@@ -35,14 +35,18 @@ const DropDownFilter = () =>{
 
     const [showFilter, setShowFilter] = useState(false)
 
-    let dropDownContent;
+    let dropDownContent, icon;
     if(showFilter){
         dropDownContent=
         <div className="dropdown-content" id="dropContent">
             {filters}
-        </div>
+        </div>;
+
+        icon = <FontAwesomeIcon icon={faAngleUp} className='my-icon-dropdown'></FontAwesomeIcon>;
     }else{
         dropDownContent=<div></div>
+
+        icon = <FontAwesomeIcon icon={faAngleDown} className='my-icon-dropdown'></FontAwesomeIcon>;
     }
 
     return(
@@ -50,7 +54,7 @@ const DropDownFilter = () =>{
         <div className="dropdown">
             <div className="dropdown-filter" onClick={handleFilterClick}>
                 Filter by status
-                <FontAwesomeIcon icon={faAngleDown} className='my-icon-dropdown'></FontAwesomeIcon>
+                {icon}
             </div>
 
             {dropDownContent}
