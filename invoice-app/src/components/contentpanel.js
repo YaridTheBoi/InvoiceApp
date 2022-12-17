@@ -14,7 +14,11 @@ const ContentPanel = (props) =>{
     }
 
     return(
-        <div className="darker-background" onClick={props.switchShowSidePanel}>{form}</div>
+        <div className="container">
+            {form}
+            <div className="darker-background" onClick={props.switchShowSidePanel}></div>
+        </div>
+
     );
 }
 
