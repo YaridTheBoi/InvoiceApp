@@ -21,8 +21,13 @@
 }
 
 label{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    font-weight: medium;
+    color: rgb(126, 136, 195);
     text-align: left;
     width: 100%;
+    margin: 10px 0px 10px 0px;
 }
 
 .create-invoice-form-body{
@@ -48,11 +53,31 @@ label{
     flex-direction: row;
     justify-content: space-between;
     gap: 35px;
+    margin:  10px 0px 10px 0px;
 }
 
 
 input{
     width: 100%;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border: 1px solid rgb(223, 227, 250);
+
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+    text-align: left; 
+    font-weight: bold;
+    color: rgb(12, 14, 22);
+    outline: none;
+}
+
+input:focus{
+
+
+
+    border: 1px solid rgb(146, 119,255);
+
 }
 
 form{
