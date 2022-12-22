@@ -7,7 +7,7 @@
     font-weight: bold;
     color: rgb(12, 14, 22);
     width: 80%;
-    /* margin: 50px -20px 25px 25px;  */
+    margin: 50px 0px 25px 0px; 
 }
 
 .form-section-title{
@@ -23,7 +23,7 @@
 label{
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
-    font-weight: medium;
+    font-weight: "normal";
     color: rgb(126, 136, 195);
     text-align: left;
     width: 100%;
@@ -52,10 +52,16 @@ label{
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     gap: 35px;
-    margin:  10px 0px 10px 0px;
+    /* margin:  10px 0px 10px 0px; */
 }
 
+.address-strip-container{
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+}
 
 input{
     width: 100%;
@@ -74,8 +80,6 @@ input{
 
 input:focus{
 
-
-
     border: 1px solid rgb(146, 119,255);
 
 }
@@ -86,9 +90,28 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    padding-right: 20px;
 
 }
 
+
+::-webkit-scrollbar{
+    width: 8px;
+    position: absolute;
+    margin: 10px;
+    /* border-radius: 2px; */
+}
+
+::-webkit-scrollbar-thumb{
+    
+    background: rgb(151,151,151);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-button{
+    
+}
 @media screen and (max-width: 800px) {
 
     .create-invoice-form-body{
