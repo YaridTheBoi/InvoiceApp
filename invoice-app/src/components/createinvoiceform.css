@@ -47,7 +47,7 @@ label{
     
 }
 
-.address-strip{
+.input-strip{
     display: flex;
     width: 100%;
     flex-direction: row;
@@ -57,19 +57,20 @@ label{
     /* margin:  10px 0px 10px 0px; */
 }
 
-.address-strip-container{
+.input-strip-container{
     display: flex;
     height: max-content;
     flex-direction: column;
+    width: 100%;
 }
 
-input{
+input, select{
     width: 100%;
     padding: 10px 10px 10px 10px;
     box-sizing: border-box;
     border-radius: 2px;
     border: 1px solid rgb(223, 227, 250);
-
+    background-color: rgb(255,255,255);
     font-family: 'League Spartan', sans-serif;
     font-size: 12px;
     text-align: left; 
@@ -78,7 +79,7 @@ input{
     outline: none;
 }
 
-input:focus{
+input:focus ,select:focus{
 
     border: 1px solid rgb(146, 119,255);
 
