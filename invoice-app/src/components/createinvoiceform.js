@@ -69,6 +69,8 @@ const CreateInvoiceForm =() =>{
                     </div>
                 </div>
 
+                <label for='project-description'>Project Description</label>
+                <input id='project-description' type={'text'}></input>
 
             </form>
 
