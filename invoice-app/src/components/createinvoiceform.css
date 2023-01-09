@@ -110,9 +110,7 @@ form{
     border-radius: 4px;
 }
 
-::-webkit-scrollbar-button{
-    
-}
+
 @media screen and (max-width: 800px) {
 
     .create-invoice-form-body{
