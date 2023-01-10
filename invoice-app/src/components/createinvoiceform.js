@@ -1,6 +1,7 @@
 import React from "react";
 import Select1 from "./select1";
 import './createinvoiceform.css'
+import AddItems1 from "./addItems1";
 //to musi przejac robienie ciemnego tla od content panel i wyjebac content panel
 const CreateInvoiceForm =() =>{
     return(
@@ -65,13 +66,15 @@ const CreateInvoiceForm =() =>{
                     </div>
                     <div className="input-strip-container">
                         <label for='payment-terms'>Payment Terms</label>
-                        <Select1></Select1>
+                        <Select1 divId='payment-terms'></Select1>
                     </div>
                 </div>
 
                 <label for='project-description'>Project Description</label>
                 <input id='project-description' type={'text'}></input>
 
+                <div className="item-list-title">Item List</div>
+                <AddItems1></AddItems1>
             </form>
 
         </div>

@@ -7,7 +7,7 @@
     font-weight: bold;
     color: rgb(12, 14, 22);
     width: 80%;
-    margin: 50px 0px 25px 0px; 
+    margin: 40px 0px 10px 0px; 
 }
 
 .form-section-title{
@@ -16,7 +16,7 @@
     text-align: left; 
     font-weight: bold;
     color: rgb(124,93,250);
-    margin: 25px 0px 25px 0px; 
+    margin: 25px 0px 15px 0px; 
     width: 100%;
 }
 
@@ -109,6 +109,18 @@ form{
     background: rgb(151,151,151);
     border-radius: 4px;
 }
+
+
+.item-list-title{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 18px;
+    text-align: left; 
+    font-weight: bold;
+    color: rgb(119,127,152);
+    width: 100%;
+    margin:20px 0px 10px 0px; 
+}
+
 
 
 @media screen and (max-width: 800px) {
